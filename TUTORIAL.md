@@ -84,7 +84,7 @@ A git repository has branches to help keep track of things you are doing with yo
 
 - Capitalization matters
 - Type `git checkout -b main` into the terminal
-- Make sure you are in your `sql-reference` repo folder
+- Make sure you are in your `sql_reference` repo folder
 - Enter `cd ~/project/sql_reference` to go to the folder if you aren't there
 
 ## 80. git status
@@ -140,7 +140,7 @@ Check the status of your repo again.
 
 ### 120.1
 
-The file you created has not been added to git yet so it is showing that it is untracked. There's two steps to make git keep track of it for you. First you need to add it to the staging area like this: `git add file_name`. Add your `README.md` file to the staging area.
+The file you created has not been added to git yet so it is showing that it is untracked. There are two steps to make git keep track of it for you. First you need to add it to the staging area like this: `git add file_name`. Add your `README.md` file to the staging area.
 
 #### HINTS
 
@@ -220,7 +220,7 @@ Check your status one more time please :grin:
 
 ### 180.1
 
-Now you have two files in staging. To commit them, you can use `git commit -m "Initial commit"`. The `-m` stands for "message". Often times, the first commit of a repo will have the message "Initial commit". Commit your two files with the message `Initial commit`.
+Now you have two files in staging. To commit them, you can use `git commit -m "Initial commit"`. The `-m` stands for "message". Often, the first commit of a repo will have the message "Initial commit". Commit your two files with the message `Initial commit`.
 
 #### HINTS
 
@@ -246,7 +246,7 @@ When you make a commit, whatever is in the staging area will be added to your gi
 
 ### 200.1
 
-Your "working tree" is clean, the files were committed and there's no other new changes that git recognizes. You can see your commit history with `git log`. Check your commit history.
+Your "working tree" is clean because the files were committed and there's no other new changes that git recognizes. You can see your commit history with `git log`. Check your commit history.
 
 #### HINTS
 
@@ -304,7 +304,7 @@ Git recognizes new unstaged changes to your file. Notice that it says that file 
 
 ### 240.1
 
-The lines with `+` in front means that those lines were added. Add your new changes to staging with the `git add` command again. Make sure to put the filename you want to add at the end of the command.
+The lines with `+` in front mean that those lines were added. Add your new changes to staging with the `git add` command again. Make sure to put the filename you want to add at the end of the command.
 
 #### HINTS
 
@@ -330,7 +330,7 @@ Check your status.
 
 ### 260.1
 
-Your new changes are staged and ready to be committed. Commit them with the message `feat: add create database reference`. As a reminder, here what the command to commit looks like: `git commit -m "message"`.
+Your new changes are staged and ready to be committed. Commit them with the message `feat: add create database reference`. As a reminder, here's what the command to commit looks like: `git commit -m "message"`.
 
 #### HINTS
 
@@ -357,7 +357,7 @@ Commit messages often start with `fix:` or `feat:`, among others, to help people
 
 ### 280.1
 
-Now there's two commits in your history, the newest one is at the top :smile: In your JSON file, add a `drop` key to your `database` object. Give it a value for how to drop a database similar to the `create` value. The syntax is in the hints. Again, make sure there's an empty line at the bottom of the file and no extra spaces after any values or curly brackets.
+Now there are two commits in your history, the newest one is at the top :smile: In your JSON file, add a `drop` key to your `database` object. Give it a value for how to drop a database similar to the `create` value. The syntax is in the hints. Again, make sure there's an empty line at the bottom of the file and no extra spaces after any values or curly brackets.
 
 #### HINTS
 
@@ -400,7 +400,7 @@ Check your status.
 
 ### 300.1
 
-Changes not staged. Check the `diff` quick.
+Changes not staged. Check the `diff` quickly.
 
 #### HINTS
 
@@ -515,7 +515,7 @@ It says you switched to your new branch. Type `git branch` so I can make sure th
 
 ### 390.1
 
-Like I said, you often don't want to make commits directly to the main branch of a repo. This branch will be for some new changes. What you will do is make the changes and commits here, then merge them into the `main` branch when they are ready. Add a reference for creating an SQL table to your json file along side your `database` property. Make it look like this:
+Like I said, you often don't want to make commits directly to the main branch of a repo. This branch will be for some new changes. You will make changes and commits here, then merge them into the `main` branch when they are ready. Add a reference for creating an SQL table to your json file alongside your `database` property. Make it look like this:
 
 ```json
 "table": {
@@ -560,7 +560,7 @@ Show me the status again. You might as well get used to it :smiley_cat:
 
 ### 405.1
 
-Changes not staged. Check the `diff` quick so you can make sure your changes look good.
+Changes not staged. Check the `diff` quickly so you can make sure your changes look good.
 
 #### HINTS
 
@@ -854,7 +854,7 @@ The commit from your feature branch was added to the `main` branch so you can sa
 
 ### 600.1
 
-You're getting the hang of it :smile: The process is to create a branch, make the changes you want, commit them, and then merge the changes into branch you started on. Pretty simple, lets keep going. Create and checkout a new branch named `feat/add-column-references`
+You're getting the hang of it :smile: The process is to create a branch, make the changes you want, commit them, and then merge the changes into the branch you started on. Pretty simple, let's keep going. Create and checkout a new branch named `feat/add-column-references`
 
 #### HINTS
 
@@ -1139,7 +1139,7 @@ There was some fancy output there, but you can see the parenthesis from the bug 
 
 ### 800.1
 
-The logs show that the bug fix commit from `main` was added, and then the commit from this branch was added on top of it. Now, when this branch is ready to be merged into `main`, it will have the same commit history. You should try to keep your branches up to date like this by rebasing them often. In your JSON file, add a `drop` key to the `column` object with a reference for dropping a column. The syntax is in the hints, give it a try first.
+The logs show that the bug fix commit from `main` was added, and then the commit from this branch was added on top of it. Now, when this branch is ready to be merged into `main`, it will have the same commit history. You should try to keep your branches up to date like this by rebasing them often. In your JSON file, add a `drop` key to the `column` object with a reference for dropping a column. The syntax is in the hints, so give it a try first.
 
 #### HINTS
 
@@ -1351,7 +1351,7 @@ Check your logs to make sure the commit was added. Then, switch to your branch f
 
 ### 940.1
 
-Another commit was added to `main`, you should update this branch again. To be more specific, a rebase will "rewind" this branch to where it last matched `main`, then, add the commits from `main` that aren't here. After that, it adds the commits you made to this branch on top. `rebase` this branch against `main` so it's up to date. You should see a conflict...
+Another commit was added to `main`, so you should update this branch again. To be more specific, a rebase will "rewind" this branch to where it last matched `main`, then, add the commits from `main` that aren't here. After that, it adds the commits you made to this branch on top. `rebase` this branch against `main` so it's up to date. You should see a conflict...
 
 #### HINTS
 
@@ -1362,7 +1362,7 @@ Another commit was added to `main`, you should update this branch again. To be m
 
 ### 950.1
 
-The conflict arose because the first commit you added to this branch changed the same lines as the commit from `main`. So it tried to add the commit, but couldn't because something was already there. There are sections, separated by characters (`<`, `>`, and `=`), that represent the commit you are on (`HEAD`) and the commit that is trying to be added (`feat: add column reference`). Fix the conflict by removing those `<`, `>`, and `=` characters. Then making the JSON object valid again.
+The conflict arose because the first commit you added to this branch changed the same lines as the commit from `main`. So it tried to add the commit, but couldn't because something was already there. There are sections, separated by characters (`<`, `>`, and `=`), that represent the commit you are on (`HEAD`) and the commit that is trying to be added (`feat: add column reference`). Fix the conflict by removing those `<`, `>`, and `=` characters. Then make the JSON object valid again.
 
 #### HINTS
 
@@ -1543,7 +1543,7 @@ There's now three commits that are unique to this branch, you will come back to 
 
 ### 1015.1
 
-This branch is still up to date since no commits have been added to `main` since this branch was created. Add an `update` key to the `row` object with `"UPDATE table_name SET column_name = new_value WHERE condition;"` as it's value.
+This branch is still up to date since no commits have been added to `main` since this branch was created. Add an `update` key to the `row` object with `"UPDATE table_name SET column_name = new_value WHERE condition;"` as its value.
 
 #### HINTS
 
@@ -1757,7 +1757,7 @@ Next, using a similar method, **show** the full changes of the **oldest** stash 
 
 ### 1120.1
 
-There's two identical items in your stash. Drop one of them with `git stash drop` or `git stash drop <stash_name>`.
+There are two identical items in your stash. Drop one of them with `git stash drop` or `git stash drop <stash_name>`.
 
 #### HINTS
 
@@ -2618,7 +2618,7 @@ And the changes from the reset are back in the working tree. So when you `reset`
 
 ### 1545.1
 
-Commit the change staged files with `feat: add unique reference` for its message.
+Commit the staged changes with `feat: add unique reference` for its message.
 
 #### HINTS
 
@@ -2643,7 +2643,7 @@ Reverting is a good way to undo a commit because you don't lose the commit from 
 
 ### 1549.1
 
-Git put you into Nano and is asking you enter a commit message for the revert, but they added a default one for you. Don't change anything in Nano, just exit the file to use the default message. You can exit the file by pressing `ctrl+x`.
+Git put you into Nano and is asking you to enter a commit message for the revert, but they added a default one for you. Don't change anything in Nano, just exit the file to use the default message. You can exit the file by pressing `ctrl+x`.
 
 #### HINTS
 
@@ -2693,7 +2693,7 @@ Type `git show HEAD~1` to take a look at the details of the original commit that
 
 ### 1560.1
 
-If you look at the bottom of those two messages, it shows the diff. The diff of the revert commit is the exact opposite of the one before it. Effectively, undoing the changes. You've used rebase to update this branch, but you can enter an "interactive" mode to manipulate commits. Type `git rebase --interactive HEAD~2` into the terminal to enter this mode. The `HEAD~2` means you will have a chance to change the last two commits.
+If you look at the bottom of those two messages, it shows the diff. The diff of the revert commit is the exact opposite of the one before it. This effectively undoes the changes. You've used rebase to update this branch, but you can enter an "interactive" mode to manipulate commits. Type `git rebase --interactive HEAD~2` into the terminal to enter this mode. The `HEAD~2` means you will have a chance to change the last two commits.
 
 #### HINTS
 
@@ -3172,7 +3172,7 @@ Use the `touch` command to create a file named `.env` in your repo.
 
 ### 1810.1
 
-`.env` files are used to store environment variables for running code. Often times, there may be sensitive information in it. Add the text `SECRET=MY_SECRET` to the file.
+`.env` files are used to store environment variables for running code. Often, there may be sensitive information in it. Add the text `SECRET=MY_SECRET` to the file.
 
 #### HINTS
 

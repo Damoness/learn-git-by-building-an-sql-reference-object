@@ -226,7 +226,7 @@
           "hints": [
             "Capitalization matters",
             "Type `git checkout -b main` into the terminal",
-            "Make sure you are in your `sql-reference` repo folder",
+            "Make sure you are in your `sql_reference` repo folder",
             "Enter `cd ~/project/sql_reference` to go to the folder if you aren't there"
           ]
         }
@@ -349,7 +349,7 @@
               "6987a4dd4a430adae7244a688ae8152c061ee9b4"
             ]
           },
-          "content": "The file you created has not been added to git yet so it is showing that it is untracked. There's two steps to make git keep track of it for you. First you need to add it to the staging area like this: `git add file_name`. Add your `README.md` file to the staging area.",
+          "content": "The file you created has not been added to git yet so it is showing that it is untracked. There are two steps to make git keep track of it for you. First you need to add it to the staging area like this: `git add file_name`. Add your `README.md` file to the staging area.",
           "hints": [
             "Replace `file_name` in the example with your `README.md` file",
             "Type `git add README.md` into the terminal and press enter",
@@ -507,7 +507,7 @@
               "24752cde5aa8bca38558b0bead01778fff33886f"
             ]
           },
-          "content": "Now you have two files in staging. To commit them, you can use `git commit -m \"Initial commit\"`. The `-m` stands for \"message\". Often times, the first commit of a repo will have the message \"Initial commit\". Commit your two files with the message `Initial commit`.",
+          "content": "Now you have two files in staging. To commit them, you can use `git commit -m \"Initial commit\"`. The `-m` stands for \"message\". Often, the first commit of a repo will have the message \"Initial commit\". Commit your two files with the message `Initial commit`.",
           "hints": [
             "Type `git commit -m \"Initial commit\"` in the terminal and press enter",
             "Enter `git log` to see if your message is correct",
@@ -559,7 +559,7 @@
               "38b9c70a70ad1b528423a2e8bc8173cf4a1e9163"
             ]
           },
-          "content": "Your \"working tree\" is clean, the files were committed and there's no other new changes that git recognizes. You can see your commit history with `git log`. Check your commit history.",
+          "content": "Your \"working tree\" is clean because the files were committed and there's no other new changes that git recognizes. You can see your commit history with `git log`. Check your commit history.",
           "hints": [
             "Type `git log` into the terminal and press enter",
             "Make sure you are in your `sql_reference` repo folder",
@@ -659,7 +659,7 @@
               "6043fa29607a7bd43c055bf38b3333694bc4c9d8"
             ]
           },
-          "content": "The lines with `+` in front means that those lines were added. Add your new changes to staging with the `git add` command again. Make sure to put the filename you want to add at the end of the command.",
+          "content": "The lines with `+` in front mean that those lines were added. Add your new changes to staging with the `git add` command again. Make sure to put the filename you want to add at the end of the command.",
           "hints": [
             "You previously used `git add README.md` to add changes to staging",
             "Type `git add sql_reference.json` into the terminal and press enter",
@@ -711,7 +711,7 @@
               "a4ffedc9dc38cd76ebc429a5d60972d9a9815dd2"
             ]
           },
-          "content": "Your new changes are staged and ready to be committed. Commit them with the message `feat: add create database reference`. As a reminder, here what the command to commit looks like: `git commit -m \"message\"`.",
+          "content": "Your new changes are staged and ready to be committed. Commit them with the message `feat: add create database reference`. As a reminder, here's what the command to commit looks like: `git commit -m \"message\"`.",
           "hints": [
             "Type `git commit -m \"feat: add create database reference\"` into the terminal and press enter",
             "View your `git log` to see if your message is correct",
@@ -764,7 +764,7 @@
               "8a7efc4bb42d31970384742d84525c68cba131b5"
             ]
           },
-          "content": "Now there's two commits in your history, the newest one is at the top :smile: In your JSON file, add a `drop` key to your `database` object. Give it a value for how to drop a database similar to the `create` value. The syntax is in the hints. Again, make sure there's an empty line at the bottom of the file and no extra spaces after any values or curly brackets.",
+          "content": "Now there are two commits in your history, the newest one is at the top :smile: In your JSON file, add a `drop` key to your `database` object. Give it a value for how to drop a database similar to the `create` value. The syntax is in the hints. Again, make sure there's an empty line at the bottom of the file and no extra spaces after any values or curly brackets.",
           "hints": [
             "The value should be `\"DROP DATABASE database_name;\"`",
             "Don't forget the comma at the end of the previous line to make it a valid json object.",
@@ -818,7 +818,7 @@
               "437ad884574fdb05a9ce38aee7dbf56695be4eb4"
             ]
           },
-          "content": "Changes not staged. Check the `diff` quick.",
+          "content": "Changes not staged. Check the `diff` quickly.",
           "hints": [
             "Use the \"git diff\" command in your repo",
             "Type `git diff` into the terminal and press enter",
@@ -1050,7 +1050,7 @@
               "87c5d7748dc84d2d768b2bc672219f68cc39d1b9"
             ]
           },
-          "content": "Like I said, you often don't want to make commits directly to the main branch of a repo. This branch will be for some new changes. What you will do is make the changes and commits here, then merge them into the `main` branch when they are ready. Add a reference for creating an SQL table to your json file along side your `database` property. Make it look like this:\n\n```json\n\"table\": {\n  \"create\": \"CREATE TABLE table_name;\"\n}\n```",
+          "content": "Like I said, you often don't want to make commits directly to the main branch of a repo. This branch will be for some new changes. You will make changes and commits here, then merge them into the `main` branch when they are ready. Add a reference for creating an SQL table to your json file alongside your `database` property. Make it look like this:\n\n```json\n\"table\": {\n  \"create\": \"CREATE TABLE table_name;\"\n}\n```",
           "hints": [
             "Make sure to add commas to keep it a valid json object",
             "The `table` key should be on the same level as the `database` key",
@@ -1103,7 +1103,7 @@
               "0b88c10ccca2b794b476a51034532ac71871f299"
             ]
           },
-          "content": "Changes not staged. Check the `diff` quick so you can make sure your changes look good.",
+          "content": "Changes not staged. Check the `diff` quickly so you can make sure your changes look good.",
           "hints": [
             "Use the \"git diff\" command in your repo",
             "Type `git diff` into the terminal and press enter",
@@ -1664,7 +1664,7 @@
               "e2cd62fcf187ca40cc8221aededbd063705c732a"
             ]
           },
-          "content": "You're getting the hang of it :smile: The process is to create a branch, make the changes you want, commit them, and then merge the changes into branch you started on. Pretty simple, lets keep going. Create and checkout a new branch named `feat/add-column-references`",
+          "content": "You're getting the hang of it :smile: The process is to create a branch, make the changes you want, commit them, and then merge the changes into the branch you started on. Pretty simple, let's keep going. Create and checkout a new branch named `feat/add-column-references`",
           "hints": [
             "You can create and checkout a branch with `git checkout -b branch_name`",
             "Type `git checkout -b feat/add-column-references` into the terminal and press enter"
@@ -2169,7 +2169,7 @@
               "fcba959ca8802311f445cad9e26d3328bf555871"
             ]
           },
-          "content": "The logs show that the bug fix commit from `main` was added, and then the commit from this branch was added on top of it. Now, when this branch is ready to be merged into `main`, it will have the same commit history. You should try to keep your branches up to date like this by rebasing them often. In your JSON file, add a `drop` key to the `column` object with a reference for dropping a column. The syntax is in the hints, give it a try first.",
+          "content": "The logs show that the bug fix commit from `main` was added, and then the commit from this branch was added on top of it. Now, when this branch is ready to be merged into `main`, it will have the same commit history. You should try to keep your branches up to date like this by rebasing them often. In your JSON file, add a `drop` key to the `column` object with a reference for dropping a column. The syntax is in the hints, so give it a try first.",
           "hints": [
             "It follows a similar syntax as adding a column",
             "Don't forget the semi-colon at the end",
@@ -2506,7 +2506,7 @@
               "42fc419c4fed876cb56104a26d0ec3fc3e0909c5"
             ]
           },
-          "content": "Another commit was added to `main`, you should update this branch again. To be more specific, a rebase will \"rewind\" this branch to where it last matched `main`, then, add the commits from `main` that aren't here. After that, it adds the commits you made to this branch on top. `rebase` this branch against `main` so it's up to date. You should see a conflict...",
+          "content": "Another commit was added to `main`, so you should update this branch again. To be more specific, a rebase will \"rewind\" this branch to where it last matched `main`, then, add the commits from `main` that aren't here. After that, it adds the commits you made to this branch on top. `rebase` this branch against `main` so it's up to date. You should see a conflict...",
           "hints": [
             "Here's an example: `git rebase branch_name`",
             "Type `git rebase main` into the terminal and press enter"
@@ -2530,7 +2530,7 @@
               "27eae18398d0bfca30fefb64c6a33d12bbec08f6"
             ]
           },
-          "content": "The conflict arose because the first commit you added to this branch changed the same lines as the commit from `main`. So it tried to add the commit, but couldn't because something was already there. There are sections, separated by characters (`<`, `>`, and `=`), that represent the commit you are on (`HEAD`) and the commit that is trying to be added (`feat: add column reference`). Fix the conflict by removing those `<`, `>`, and `=` characters. Then making the JSON object valid again.",
+          "content": "The conflict arose because the first commit you added to this branch changed the same lines as the commit from `main`. So it tried to add the commit, but couldn't because something was already there. There are sections, separated by characters (`<`, `>`, and `=`), that represent the commit you are on (`HEAD`) and the commit that is trying to be added (`feat: add column reference`). Fix the conflict by removing those `<`, `>`, and `=` characters. Then make the JSON object valid again.",
           "hints": [
             "Be sure to remove all those special characters",
             "The part of the JSON object with conflicts should look like this:\n```json\n\"row\": {\n  \"insert\": \"INSERT INTO table_name(columns) VALUES(values);\"\n},\n\"column\": {\n  \"add\": \"ALTER TABLE table_name ADD COLUMN column_name;\"\n}\n```",
@@ -2785,7 +2785,7 @@
               "7d05d812f48e7ece478363d4c80d20b2f506949d"
             ]
           },
-          "content": "This branch is still up to date since no commits have been added to `main` since this branch was created. Add an `update` key to the `row` object with `\"UPDATE table_name SET column_name = new_value WHERE condition;\"` as it's value.",
+          "content": "This branch is still up to date since no commits have been added to `main` since this branch was created. Add an `update` key to the `row` object with `\"UPDATE table_name SET column_name = new_value WHERE condition;\"` as its value.",
           "hints": [
             "The `row` key should look like this:\n```json\n\"row\": {\n  \"insert\": \"INSERT INTO table_name(columns) VALUES(values);\",\n  \"update\": \"UPDATE table_name SET column_name = new_value WHERE condition;\"\n}\n```",
             "The whole file should look like this:\n```json\n{\n  \"database\": {\n    \"create\": \"CREATE DATABASE database_name;\",\n    \"drop\": \"DROP DATABASE database_name;\"\n  },\n  \"table\": {\n    \"create\": \"CREATE TABLE table_name();\",\n    \"drop\": \"DROP TABLE table_name;\"\n  },\n  \"row\": {\n    \"insert\": \"INSERT INTO table_name(columns) VALUES(values);\",\n    \"update\": \"UPDATE table_name SET column_name = new_value WHERE condition;\"\n  }\n}\n\n```",
@@ -3197,7 +3197,7 @@
               "62464b374b5ae78554ee5def7c1a8dab276d0235"
             ]
           },
-          "content": "There's two identical items in your stash. Drop one of them with `git stash drop` or `git stash drop <stash_name>`.",
+          "content": "There are two identical items in your stash. Drop one of them with `git stash drop` or `git stash drop <stash_name>`.",
           "hints": [
             "Drop one of the stashed changes with the suggested command",
             "Type `git stash drop` in the terminal and press enter"
@@ -4534,7 +4534,7 @@
               "0aea00f892344c7829190e10cf65e10651c02c00"
             ]
           },
-          "content": "Commit the change staged files with `feat: add unique reference` for its message.",
+          "content": "Commit the staged changes with `feat: add unique reference` for its message.",
           "hints": [
             "Commit changes with `git commit -m \"message\"`",
             "Type `git commit -m \"feat: add unique reference\"` into the terminal and press enter",
@@ -4585,7 +4585,7 @@
               "f8b195d63603b7c6c7ed9d8cd0d3318f1978eeb9"
             ]
           },
-          "content": "Git put you into Nano and is asking you enter a commit message for the revert, but they added a default one for you. Don't change anything in Nano, just exit the file to use the default message. You can exit the file by pressing `ctrl+x`.",
+          "content": "Git put you into Nano and is asking you to enter a commit message for the revert, but they added a default one for you. Don't change anything in Nano, just exit the file to use the default message. You can exit the file by pressing `ctrl+x`.",
           "hints": [
             "Exit the file by pressing `ctrl+x`",
             "If you accidentally changed something in Nano, press `n` after `ctrl+x` to discard the changes",
@@ -4687,7 +4687,7 @@
               "08ef5d2f3d0414dfcb5167297e49a2e017236599"
             ]
           },
-          "content": "If you look at the bottom of those two messages, it shows the diff. The diff of the revert commit is the exact opposite of the one before it. Effectively, undoing the changes. You've used rebase to update this branch, but you can enter an \"interactive\" mode to manipulate commits. Type `git rebase --interactive HEAD~2` into the terminal to enter this mode. The `HEAD~2` means you will have a chance to change the last two commits.",
+          "content": "If you look at the bottom of those two messages, it shows the diff. The diff of the revert commit is the exact opposite of the one before it. This effectively undoes the changes. You've used rebase to update this branch, but you can enter an \"interactive\" mode to manipulate commits. Type `git rebase --interactive HEAD~2` into the terminal to enter this mode. The `HEAD~2` means you will have a chance to change the last two commits.",
           "hints": [
             "Enter the suggested command",
             "Type `git rebase --interactive HEAD~2` into the terminal and press enter",
@@ -5587,7 +5587,7 @@
               "a973df15e984a82a5ebeaa97201d6961a4aab0c5"
             ]
           },
-          "content": "`.env` files are used to store environment variables for running code. Often times, there may be sensitive information in it. Add the text `SECRET=MY_SECRET` to the file.",
+          "content": "`.env` files are used to store environment variables for running code. Often, there may be sensitive information in it. Add the text `SECRET=MY_SECRET` to the file.",
           "hints": [
             "Add the suggested text to the `.env` file",
             "Add `SECRET=MY_SECRET` to the `.env` file",
